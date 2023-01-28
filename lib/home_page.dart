@@ -12,6 +12,11 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   late double num1, num2, output = 0;
+  final String add = '+';
+  final String sub = '-';
+  final String mul = '×';
+  final String div = '÷';
+  String? selectedOperator;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,34 +54,42 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 CustomButton(
-                  symbol: '+',
+                  selectedOperator: selectedOperator,
+                  symbol: add,
                   onTap: () {
                     setState(() {
+                      selectedOperator = add;
                       output = (num1 + num2);
                     });
                   },
                 ),
                 CustomButton(
-                  symbol: '-',
+                  selectedOperator: selectedOperator,
+                  symbol: sub,
                   onTap: () {
                     setState(() {
+                      selectedOperator = sub;
                       output = (num1 - num2);
                     });
                   },
                 ),
                 CustomButton(
-                  symbol: '×',
+                  selectedOperator: selectedOperator,
+                  symbol: mul,
                   onTap: () {
                     setState(() {
+                      selectedOperator = mul;
                       output = (num1 * num2);
                     });
                   },
                 ),
                 CustomButton(
-                  symbol: '÷',
+                  selectedOperator: selectedOperator,
+                  symbol: div,
                   onTap: () {
                     setState(
                       () {
+                        selectedOperator = div;
                         if (num2 == 0) {
                           output = -1;
                         } else {
