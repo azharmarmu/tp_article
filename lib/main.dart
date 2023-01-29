@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:tp_article/boxShape.dart';
+import 'boxShape.dart';
 import 'home_page.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const BoxShapeCircle(),
     );
   }
 }

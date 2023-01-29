@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ThirdPage extends StatelessWidget {
-  const ThirdPage({Key? key}) : super(key: key);
+class BackgroundBlendMode extends StatelessWidget {
+  const BackgroundBlendMode({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,18 +12,20 @@ class ThirdPage extends StatelessWidget {
       body: Center(
         child: Container(
           width: 350,
-          height: 370,
+          height: 120,
           decoration: BoxDecoration(
             color: Colors.white,
             image: const DecorationImage(image: NetworkImage('https://www.tutorialspoint.com/images/logo.png'),fit: BoxFit.contain),
             border: Border.all(width: 8,color: Colors.green),
+            borderRadius: BorderRadius.circular(18),
             boxShadow:const [BoxShadow(
               color:Colors.greenAccent,
               offset: Offset(5.0, 5.0),
               spreadRadius: 2.0,
               blurRadius: 10.0,
             )],
-            shape: BoxShape.circle,
+            backgroundBlendMode: BlendMode.overlay,
+
           ),
         ),
       ),
