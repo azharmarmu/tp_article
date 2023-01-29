@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
             left: BorderSide(color: Colors.red, width: 5.0, style: BorderStyle.solid),
             ),
           ),
-          child:const Text("TutorialsPoint",style: TextStyle(fontSize: 32)),
+          child:const Text("Tutorialspoint",style: TextStyle(fontSize: 32)),
         ),
       ),
     );
