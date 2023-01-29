@@ -7,6 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
         title: const Text('BorderSide Widget'),
       ),
       body: Center(
@@ -22,6 +23,7 @@ class HomePage extends StatelessWidget {
           ),
           child:const Text("Tutorialspoint",style: TextStyle(fontSize: 32)),
         ),
+
       ),
     );
   }
