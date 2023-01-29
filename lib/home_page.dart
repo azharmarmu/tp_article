@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Title of the Question'),
+        title: const Text('Tutorials Point'),
       ),
       body: const SizedBox.shrink(),
     );
