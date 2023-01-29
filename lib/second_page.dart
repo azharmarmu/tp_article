@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class SecondPage extends StatelessWidget {
+  const SecondPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +19,13 @@ class HomePage extends StatelessWidget {
             border: Border.all(width: 8,color: Colors.green),
             borderRadius: BorderRadius.circular(18),
             boxShadow:const [BoxShadow(
-                color:Colors.greenAccent,
-                offset: Offset(5.0, 5.0),
-                spreadRadius: 2.0,
-                blurRadius: 10.0,
+              color:Colors.greenAccent,
+              offset: Offset(5.0, 5.0),
+              spreadRadius: 2.0,
+              blurRadius: 10.0,
             )],
+            backgroundBlendMode: BlendMode.overlay,
+
           ),
         ),
       ),
