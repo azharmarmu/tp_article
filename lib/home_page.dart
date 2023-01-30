@@ -9,7 +9,15 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Tutorials Point'),
       ),
-      body: const SizedBox.shrink(),
+      body: const Center(
+        child: Text(
+          "Tutorials Point",
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
     );
   }
 }
