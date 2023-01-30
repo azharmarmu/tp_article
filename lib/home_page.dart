@@ -9,7 +9,21 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Tutorials Point'),
       ),
-      body: const SizedBox.shrink(),
+      body: FutureBuilder<String>(
+        future: fetchData(),
+        builder: (BuildContext context, AsyncSnapshot snapshot) {
+          if (snapshot.hasData) {
+            return Text(snapshot.data);
+          } else if (snapshot.hasError) {
+            return Text("${snapshot.error}");
+          }
+          return const CircularProgressIndicator();
+        },
+      ),
     );
+  }
+
+  Future<String> fetchData() async {
+    return Future.delayed(const Duration(seconds: 2), () => "Data Loaded");
   }
 }
