@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'right_to_left.dart';
+import 'all.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const RightToLeft(),
+      home: const AllDirectional(),
     );
   }
 }
