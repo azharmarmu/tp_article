@@ -9,7 +9,21 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Tutorials Point'),
       ),
-      body: const SizedBox.shrink(),
+      body: Center(
+        child: Container(
+          width: 350,
+          height: 350,
+          color: Colors.blueAccent,
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              width:100,
+              height: 100,
+              color: Colors.redAccent,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
