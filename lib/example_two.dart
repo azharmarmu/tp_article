@@ -11,13 +11,16 @@ class ExampleTwo extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Icon Class'),
       ),
-      body: const Center(
-        child: Icon(
-          Icons.favorite,
-          color: Colors.red,
-          size: 48.0,
-          semanticLabel: 'Heart Icon',
-          textDirection: TextDirection.ltr,
+      body: Tooltip(
+        message: 'Heart Icon',
+        child: const Center(
+          child: Icon(
+            Icons.favorite,
+            color: Colors.red,
+            size: 48.0,
+            // semanticLabel: 'Heart Icon',
+            textDirection: TextDirection.ltr,
+          ),
         ),
       ),
     );
