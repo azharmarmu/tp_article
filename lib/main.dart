@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tp_article/example_one.dart';
 
-import 'example_two.dart';
-import 'example_three.dart';
-import 'example_four.dart';
-import 'example_five.dart';
+import 'with_safe_area.dart';
+import 'without_safe_area.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,11 +18,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      //home: const ExampleOne(),
-      //home: const ExampleTwo(),
-      //home: const ExampleThree(),
-      //home: const ExampleFour(),
-      home: const ExampleFive(),
+      // home: const WithSafeArea(),
+      home: const WithoutSaferArea(),
     );
   }
 }
