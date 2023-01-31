@@ -1,18 +1,24 @@
 import 'package:flutter/material.dart';
 
-class ExampleTwo extends StatelessWidget {
-  const ExampleTwo({super.key});
+class ExampleTWo extends StatelessWidget {
+  const ExampleTWo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Container(
-        color: Colors.red,
-        child: SizedBox.shrink(),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Tutorials Point'),
       ),
-      left: false,
-      right: false,
-      top: false,
+      body: Center(
+        child: Container(
+          color: Colors.red,
+          child: const Text(
+            'Example without Safe Area',
+            style: TextStyle(
+                color: Colors.white, fontSize: 42, fontWeight: FontWeight.bold),
+          ),
+        ),
+      ),
     );
   }
 }

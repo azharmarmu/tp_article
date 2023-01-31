@@ -10,7 +10,18 @@ class ExampleOne extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Tutorials Point'),
         ),
-        body: const SizedBox.shrink(),
+        body: Center(
+          child: Container(
+            color: Colors.red,
+            child: const Text(
+              'Example with Safe Area',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 42,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),
+        ),
       ),
     );
   }
