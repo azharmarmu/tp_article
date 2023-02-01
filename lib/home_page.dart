@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Center(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('TP TextButton'),
+          title: const Text('TP BottomSheet'),
           backgroundColor: Colors.blue,
         ),
         body: Center(
