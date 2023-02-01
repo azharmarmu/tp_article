@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tp_article/CustomClip.dart';
 
 import 'home_page.dart';
 
