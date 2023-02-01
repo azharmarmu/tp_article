@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tp_article/ImageCircleAvatar.dart';
+import 'package:tp_article/contact_list_using_circle_avatar.dart';
 
 import 'home_page.dart';
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const ContactListCircleAvatar(),
     );
   }
 }
