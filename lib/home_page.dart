@@ -5,11 +5,28 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Tutorials Point'),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Tutorials Point'),
+        ),
+        body: ListView(
+          children: const <Widget>[
+            ListTile(
+              title: Text('Fruits'),
+              trailing: Icon(Icons.arrow_forward),
+            ),
+            ListTile(
+              title: Text('Vegetables'),
+              trailing: Icon(Icons.arrow_forward),
+            ),
+            ListTile(
+              title: Text('Dry fruits'),
+              trailing: Icon(Icons.arrow_forward),
+            ),
+          ],
+        ),
       ),
-      body: const SizedBox.shrink(),
     );
   }
 }
