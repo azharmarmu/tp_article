@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Center(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('TP ElevatedButton'),
+          title: const Text('TP FloatingActionButton'),
           backgroundColor: Colors.blue,
         ),
         body: Center(
@@ -21,8 +21,11 @@ class HomePage extends StatelessWidget {
                   'https://www.tutorialspoint.com/market/public/assets/images/logo-color.png',
                 ),
               ),
-              ElevatedButton(
-                child: const Text('Click me'),
+              FloatingActionButton(
+                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white,
+                mini: true,
+                child: Icon(Icons.add),
                 onPressed: () {
                   showModalBottomSheet<void>(
                     context: context,
@@ -41,16 +44,11 @@ class HomePage extends StatelessWidget {
                               title: Text('Video'),
                             ),
                             const SizedBox(height: 24),
-                            ElevatedButton(
+                            FloatingActionButton(
                               onPressed: () => Navigator.of(context).pop(),
                               child: const Text(
                                 'Close',
                                 style: TextStyle(color: Colors.white),
-                              ),
-                              style: ButtonStyle(
-                                backgroundColor: MaterialStateProperty.all(
-                                  Colors.green,
-                                ),
                               ),
                             ),
                           ],
