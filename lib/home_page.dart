@@ -6,10 +6,25 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Tutorials Point'),
-      ),
-      body: const SizedBox.shrink(),
-    );
+        appBar: AppBar(
+          title: const Text('Tutorials Point'),
+        ),
+        body: Column(
+          children: [
+            Expanded(
+              child: Container(
+                color: Colors.yellow,
+                height: 60,
+              ),
+            ),
+            Flexible(
+              fit: FlexFit.loose,
+              child: Container(
+                color: Colors.green,
+                height: 200,
+              ),
+            ),
+          ],
+        ));
   }
 }
