@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Center(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('TP ElevatedButton'),
+          title: const Text('TP OutlinedButton'),
           backgroundColor: Colors.blue,
         ),
         body: Center(
@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
                   'https://www.tutorialspoint.com/market/public/assets/images/logo-color.png',
                 ),
               ),
-              ElevatedButton(
+              OutlinedButton(
                 child: const Text('Click me'),
                 onPressed: () {
                   showModalBottomSheet<void>(
@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
                               title: Text('Video'),
                             ),
                             const SizedBox(height: 24),
-                            ElevatedButton(
+                            OutlinedButton(
                               onPressed: () => Navigator.of(context).pop(),
                               child: const Text(
                                 'Close',
@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
                                 ),
                               ),
                             ),
-                          ],
+                            ],
                         ),
                       );
                     },
@@ -67,3 +67,5 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+                          
