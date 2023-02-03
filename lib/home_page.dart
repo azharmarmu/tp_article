@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Center(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('TP InkWell'),
+          title: const Text('TP GestureDetector'),
           backgroundColor: Colors.blue,
         ),
         body: Center(
@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
                   'https://www.tutorialspoint.com/market/public/assets/images/logo-color.png',
                 ),
               ),
-              InkWell(
+              GestureDetector(
                 onTap: () {
                   showModalBottomSheet<void>(
                     context: context,
