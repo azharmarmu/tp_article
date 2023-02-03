@@ -7,7 +7,7 @@ class BorderRadiusAll extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tutorialspoint'),
+        title: const Text('Tutorialspoint'),
         backgroundColor: Colors.greenAccent[400],
       ), //AppBar
       body: Center(
@@ -28,7 +28,7 @@ class BorderRadiusAll extends StatelessWidget {
                     width: 4.0,
                     style: BorderStyle.solid), //Border.all
                 /*** The BorderRadius widget  is here ***/
-                borderRadius: BorderRadius.all(
+                borderRadius: const BorderRadius.all(
                   Radius.circular(10),
                 ), //BorderRadius.all
               ), //BorderRadius.all
@@ -37,7 +37,6 @@ class BorderRadiusAll extends StatelessWidget {
         ),
       ), //Center
     ); //Scaffold
-    //Debug banner is turned off
     //MaterialApp
   }
 }
