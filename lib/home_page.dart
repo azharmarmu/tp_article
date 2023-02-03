@@ -43,14 +43,14 @@ class HomePage extends StatelessWidget {
                             const SizedBox(height: 24),
                             ElevatedButton(
                               onPressed: () => Navigator.of(context).pop(),
-                              child: const Text(
-                                'Close',
-                                style: TextStyle(color: Colors.white),
-                              ),
                               style: ButtonStyle(
                                 backgroundColor: MaterialStateProperty.all(
                                   Colors.green,
                                 ),
+                              ),
+                              child: const Text(
+                                'Close',
+                                style: TextStyle(color: Colors.white),
                               ),
                             ),
                           ],
