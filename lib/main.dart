@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 
 // ignore: unused_import
-import 'example_one.dart';
-import 'example_two.dart';
+import 'home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const HomePage());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
 // This widget is the root of your application.
   @override
@@ -19,8 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: const ExampleOne(),
-      home: const ExampleTwo(),
+      home: const HomePage(),
     );
   }
 }
