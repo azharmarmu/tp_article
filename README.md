@@ -1,3 +1,3 @@
-Article link: https://docs.google.com/document/d/14m5KFMsk_Ot_AVXhmoIs5mHBSM-GM0n4iYOIyxNpE_c/edit?usp=sharing
+Article link: https://docs.google.com/document/d/10AYCPECF3CGLSMVy8rOYHB6cyfxizqUdY3UIt0ErzOY/edit?usp=sharing
 
 
