@@ -5,11 +5,22 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Tutorials Point'),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Tutorials Point'),
+        ),
+        body: ListView.builder(
+          itemCount: 100,
+          itemBuilder: (context, index) {
+            return Container(
+              height: 50,
+              color: Colors.primaries[index % Colors.primaries.length],
+              child: Center(child: Text('Item $index')),
+            );
+          },
+        ),
       ),
-      body: const SizedBox.shrink(),
     );
   }
 }
