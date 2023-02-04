@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -5,11 +6,24 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Tutorials Point'),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Tutorials Point'),
+          backgroundColor: Colors.blue,
+        ),
+        body: const Center(
+          child: SizedBox(
+            width: 200,
+            height: 150,
+            child: AutoSizeText(
+              'Welcome to Tutorials Point',
+              style: TextStyle(fontSize: 30.0),
+              maxLines: 2,
+            ),
+          ),
+        ),
       ),
-      body: const SizedBox.shrink(),
     );
   }
 }
