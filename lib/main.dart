@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tp_article/clip_r_rect.dart';
 
 import 'home_page.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const ClipRrect(),
     );
   }
 }
