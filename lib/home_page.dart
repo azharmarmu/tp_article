@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
       body: const Center(
         child: FittedBox(
           fit: BoxFit.contain,
-          child: Text("Welcome to Tutorials Point"),
+          child: Text("Tutorials Point"),
         ),
       ),
     );
