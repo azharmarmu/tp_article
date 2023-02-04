@@ -15,7 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tutorials Point',
       theme: ThemeData(
+        splashColor: Colors.transparent,
         primarySwatch: Colors.blue,
+        highlightColor: Colors.transparent,
+        hoverColor: Colors.transparent,
       ),
       home: const HomePage(),
     );
