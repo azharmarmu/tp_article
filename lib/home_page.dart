@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
           title: const Text('Tutorials Point'),
         ),
         body: ListView.builder(
-          itemCount: 100,
+          itemCount: 10,
           itemBuilder: (context, index) {
             return Container(
               height: 50,
