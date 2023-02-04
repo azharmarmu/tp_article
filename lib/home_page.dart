@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+void main() => runApp(HomePage());
 
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -11,18 +11,31 @@ class HomePage extends StatelessWidget {
           title: const Text('Tutorials Point'),
         ),
         body: ListView(
-          children: const <Widget>[
-            ListTile(
-              title: Text('Fruits'),
-              trailing: Icon(Icons.arrow_forward),
+          children: <Widget>[
+            Container(
+              height: 50,
+              color: Colors.yellow,
+              child: const Center(child: Text('Item 1')),
             ),
-            ListTile(
-              title: Text('Vegetables'),
-              trailing: Icon(Icons.arrow_forward),
+            Container(
+              height: 50,
+              color: Colors.green,
+              child: const Center(child: Text('Item 2')),
             ),
-            ListTile(
-              title: Text('Dry fruits'),
-              trailing: Icon(Icons.arrow_forward),
+            Container(
+              height: 50,
+              color: Colors.red,
+              child: const Center(child: Text('Item 3')),
+            ),
+            Container(
+              height: 50,
+              color: Colors.blue,
+              child: const Center(child: Text('Item 4')),
+            ),
+            Container(
+              height: 50,
+              color: Colors.pink,
+              child: const Center(child: Text('Item 5')),
             ),
           ],
         ),
