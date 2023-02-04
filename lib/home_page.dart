@@ -7,9 +7,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tutorials Point'),
+        title: const Text("Tutorials Point"),
       ),
-      body: const SizedBox.shrink(),
+      body: const Center(
+        child: FittedBox(
+          fit: BoxFit.contain,
+          child: Text("Welcome to Tutorials Point"),
+        ),
+      ),
     );
   }
 }
