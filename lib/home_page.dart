@@ -28,12 +28,12 @@ class HomePage extends StatelessWidget {
   }
   Widget myMarquee(){
     return Marquee(
-      text: 'The properties used in this marquee are style, scrollAxis, crossAxisAlignment, blankspace, velocity, pauseAfterRound,startPadding, accelerationCurve, accelerationDuration, decelerationCurve',
+      text: 'This is a complex Marquee all the properties are used',
       style: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
       scrollAxis: Axis.horizontal,
       crossAxisAlignment: CrossAxisAlignment.start,
       blankSpace: 20.0,
-      velocity: 50.0,
+      velocity: 70.0,
       pauseAfterRound: const Duration(seconds: 1),
       startPadding:10.0,
       accelerationCurve: Curves.linear,
