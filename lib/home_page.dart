@@ -16,132 +16,69 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                decoration: const BoxDecoration(
-                    border: Border(
-                        top: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid))),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black12,
+                    width: 1.0,
+                    style: BorderStyle.solid,
+                  ),
+                ),
                 child: const Padding(
                   padding: EdgeInsets.all(15),
                   child: Text('all padding'),
                 ),
               ),
-              const SizedBox(
-                height: 16,
-              ),
+              const SizedBox(height: 16),
               Container(
-                decoration: const BoxDecoration(
-                    border: Border(
-                        top: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid))),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black12,
+                    width: 1.0,
+                    style: BorderStyle.solid,
+                  ),
+                ),
                 child: const Padding(
                   padding: EdgeInsets.only(right: 35),
                   child: Text('Right padding'),
                 ),
               ),
-              const SizedBox(
-                height: 16,
-              ),
+              const SizedBox(height: 16),
               Container(
-                decoration: const BoxDecoration(
-                    border: Border(
-                        top: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid))),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black12,
+                    width: 1.0,
+                    style: BorderStyle.solid,
+                  ),
+                ),
                 child: const Padding(
                   padding: EdgeInsets.symmetric(vertical: 15),
                   child: Text('vertical padding'),
                 ),
               ),
-              const SizedBox(
-                height: 16,
-              ),
+              const SizedBox(height: 16),
               Container(
-                decoration: const BoxDecoration(
-                    border: Border(
-                        top: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid))),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black12,
+                    width: 1.0,
+                    style: BorderStyle.solid,
+                  ),
+                ),
                 child: const Padding(
                   padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                   child: Text('left padding'),
                 ),
               ),
-              const SizedBox(
-                height: 16,
-              ),
+              const SizedBox(height: 16),
               Container(
-                decoration: const BoxDecoration(
-                    border: Border(
-                        top: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        left: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        right: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid),
-                        bottom: BorderSide(
-                            color: Color(0xFF000000),
-                            width: 1.0,
-                            style: BorderStyle.solid))),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black12,
+                    width: 1.0,
+                    style: BorderStyle.solid,
+                  ),
+                ),
                 child: const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20),
                   child: Text('horizontal padding'),
