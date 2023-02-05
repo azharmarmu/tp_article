@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -8,7 +9,7 @@ class HomePage extends StatelessWidget {
     return Center(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('TP TextButton'),
+          title: const Text('TP Rotate Transition'),
           backgroundColor: Colors.blue,
         ),
         body: Center(
@@ -22,44 +23,18 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               TextButton(
-                child: const Text('Click me'),
-                onPressed: () {
-                  showModalBottomSheet<void>(
-                    context: context,
-                    builder: (BuildContext ctx) {
-                      return SafeArea(
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            const ListTile(
-                              leading: Icon(Icons.music_note),
-                              title: Text('Music'),
-                            ),
-                            const ListTile(
-                              leading: Icon(Icons.video_file),
-                              title: Text('Video'),
-                            ),
-                            const SizedBox(height: 24),
-                            TextButton(
-                              onPressed: () => Navigator.of(context).pop(),
-                              child: const Text(
-                                'Close',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              style: ButtonStyle(
-                                backgroundColor: MaterialStateProperty.all(
-                                  Colors.green,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      );
-                    },
-                  );
-                },
-              ),
+                  child: const Text('Click me'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      PageTransition(
+                        curve: Curves.bounceOut,
+                        type: PageTransitionType.rotate,
+                        alignment: Alignment.topCenter,
+                        child: const SecondPage(),
+                      ),
+                    );
+                  }),
             ],
           ),
         ),
@@ -67,3 +42,23 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+class SecondPage extends StatelessWidget {
+  /// constructor of the page
+  const SecondPage({
+    Key? key,
+  }) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('TP Rotate Transition'),
+        backgroundColor: Colors.blue,
+      ),
+      body: const Center(
+        child: Text('Second Page'),
+      ),
+    );
+  }
+}
+
