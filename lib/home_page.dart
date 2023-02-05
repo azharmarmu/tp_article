@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
       ),
       body: const Center(
           child: RotatedBox(
-        quarterTurns: 3,
+        quarterTurns: 4,
         child: Text('Hello Tutorialspoint!'),
       )),
       backgroundColor: Colors.lightBlue[50],
