@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'all.dart';
-
+import 'package:tp_article/bidirectional_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const AllDirectional(),
+      home: const BiDirectionalWidget(),
     );
   }
 }
